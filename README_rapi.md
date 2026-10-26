@@ -277,15 +277,37 @@ Isi kolom **Status** dengan ✔ (sesuai) atau ✘ setelah benar-benar dites.
 
 ## 13. Tangkapan Layar
 
-| Bagian | Gambar |
-|---|---|
-| Homepage (laptop) | ![Homepage laptop](screenshots/01-beranda-laptop.png) |
-| Homepage (HP) | ![Homepage HP](screenshots/02-beranda-hp.png) |
-| Katalog ruangan | ![Katalog](screenshots/03-katalog.png) |
-| Form dengan pesan validasi | ![Validasi](screenshots/04-form-validasi.png) |
-| Pengajuan berhasil | ![Berhasil](screenshots/05-hasil-berhasil.png) |
-| Bukti AJAX (tab Network) | ![AJAX](screenshots/06-network-ajax.png) |
-| Data tersimpan di database | ![Database](screenshots/07-database.png) |
+Bagian ini berisi dokumentasi tampilan dan hasil pengujian fitur Peminjaman Ruangan pada website SIPTA.
+
+### 13.1 Homepage
+
+Tampilan halaman utama website SIPTA.
+
+![Homepage Website](image.png)
+
+### 13.2 Katalog Ruangan
+
+Tampilan daftar ruangan yang dapat dilihat pengguna.
+
+![Katalog Ruangan](image-1.png)
+
+### 13.3 Validasi Form Peminjaman
+
+Contoh tampilan form saat sistem menampilkan pesan validasi.
+
+![Validasi Form](image-2.png)
+
+### 13.4 Pengajuan Berhasil
+
+Tampilan ringkasan setelah pengajuan peminjaman berhasil dikirim.
+
+![Pengajuan Berhasil](image-3.png)
+
+### 13.5 Data Tersimpan di Database
+
+Bukti data pengajuan yang tersimpan di database.
+
+![Data Database](image-4.png)
 
 ---
 
