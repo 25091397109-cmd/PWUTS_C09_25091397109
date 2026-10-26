@@ -1,0 +1,42 @@
+<section class="halaman-katalog">
+  <h2>Katalog Ruangan</h2>
+  <p>Pilih ruangan, cek jadwal yang sudah terisi, lalu ajukan peminjaman.</p>
+
+  <!-- Cari dan filter -->
+  <div class="alat-filter">
+    <input type="text" id="cari-ruangan" placeholder="Cari nama ruangan...">
+    <select id="filter-status">
+      <option value="semua">Semua status</option>
+      <option value="tersedia">Tersedia</option>
+      <option value="tidak tersedia">Tidak tersedia</option>
+    </select>
+  </div>
+
+  <!-- Daftar ruangan: nanti diisi JS dari database -->
+  <div id="daftar-ruangan" class="daftar-ruangan">
+
+    <!-- CONTOH SEMENTARA: nanti diganti otomatis oleh JS -->
+    <article class="kartu-ruangan">
+      <h3>Ruang Kuliah 301</h3>
+      <p>Kapasitas: 40 orang</p>
+      <p>Fasilitas termasuk: Proyektor, AC, Papan Tulis</p>
+      <p>Tarif Sabtu/Minggu: Rp250.000 / hari</p>
+      <p>Status: Tersedia</p>
+      <button class="tombol btn-ajukan" data-id-ruangan="1">Ajukan Peminjaman</button>
+    </article>
+
+  </div>
+
+  <!-- Cek jadwal dan estimasi biaya -->
+  <div class="cek-jadwal">
+    <h3>Cek Jadwal dan Estimasi Biaya</h3>
+
+    <label for="pilih-ruangan-jadwal">Ruangan</label>
+    <select id="pilih-ruangan-jadwal"></select>
+
+    <label for="tanggal-jadwal">Tanggal</label>
+    <input type="date" id="tanggal-jadwal">
+
+    <div id="hasil-jadwal">Pilih ruangan dan tanggal untuk melihat jadwal.</div>
+  </div>
+</section>

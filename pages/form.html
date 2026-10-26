@@ -1,0 +1,67 @@
+<section class="halaman-form">
+  <h2>Form Pengajuan Peminjaman Ruangan</h2>
+  <p>Lengkapi data di bawah. Tanda * wajib diisi.</p>
+
+  <!-- Data peminjam: hanya ditampilkan, bukan diisi -->
+  <div class="data-peminjam">
+    <p><strong>Peminjam:</strong> Mahasiswa Contoh</p>
+  </div>
+
+  <form id="form-peminjaman" method="post" action="php/proses_peminjaman.php"
+        enctype="multipart/form-data" novalidate>
+
+    <div class="baris-form">
+      <label for="id_ruangan">Ruangan *</label>
+      <select id="id_ruangan" name="id_ruangan">
+        <option value="">-- Pilih ruangan --</option>
+      </select>
+      <span class="pesan-error" id="error-id_ruangan"></span>
+    </div>
+
+    <div class="baris-form">
+      <label for="tgl_pinjam">Tanggal Pinjam *</label>
+      <input type="date" id="tgl_pinjam" name="tgl_pinjam">
+      <span class="pesan-error" id="error-tgl_pinjam"></span>
+    </div>
+
+    <div class="baris-form">
+      <label for="jam_mulai">Jam Mulai *</label>
+      <input type="time" id="jam_mulai" name="jam_mulai">
+      <span class="pesan-error" id="error-jam_mulai"></span>
+    </div>
+
+    <div class="baris-form">
+      <label for="jam_selesai">Jam Selesai *</label>
+      <input type="time" id="jam_selesai" name="jam_selesai">
+      <span class="pesan-error" id="error-jam_selesai"></span>
+    </div>
+
+    <div class="baris-form">
+      <label for="keperluan">Keperluan Kegiatan *</label>
+      <textarea id="keperluan" name="keperluan" rows="4"
+                placeholder="Contoh: Workshop persiapan tugas akhir"></textarea>
+      <span class="pesan-error" id="error-keperluan"></span>
+    </div>
+
+    <div class="baris-form">
+      <label for="file_surat">Unggah Surat Peminjaman * (PDF, maks. 5 MB)</label>
+      <input type="file" id="file_surat" name="file_surat" accept=".pdf">
+      <span class="pesan-error" id="error-file_surat"></span>
+    </div>
+
+    <!-- Hasil hitungan otomatis -->
+    <div class="kotak-biaya">
+      <p>Jenis hari: <strong id="info-jenis-hari">-</strong></p>
+      <p>Total biaya: <strong id="info-total-biaya">Rp0</strong></p>
+      <small>Hari kerja gratis. Akhir pekan dikenai tarif ruangan. Pembayaran dilakukan di luar sistem.</small>
+    </div>
+
+    <div class="tombol-form">
+      <button type="reset" class="tombol tombol-batal">Batal</button>
+      <button type="submit" class="tombol">Kirim Pengajuan</button>
+    </div>
+  </form>
+
+  <!-- Hasil setelah pengajuan: diisi JS -->
+  <div id="hasil-pengajuan"></div>
+</section>

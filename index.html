@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPTA - Peminjaman Ruangan Fakultas Vokasi UNESA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">SIPTA</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="pages/katalog.html" class="nav-link">Katalog Ruangan</a></li>
+        <li><a href="pages/form.html" class="nav-link">Ajukan Peminjaman</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- AREA KONTEN: bagian ini yang nanti diganti oleh AJAX -->
+  <main id="konten">
+
+    <section class="hero">
+      <div class="hero-teks">
+        <h1>Pinjam Ruangan Fakultas Vokasi, Tanpa Antre di TU</h1>
+        <p>Cek ketersediaan ruangan dan ajukan peminjaman langsung dari website.</p>
+        <a href="pages/katalog.html" class="tombol nav-link">Lihat Katalog Ruangan</a>
+      </div>
+      <img src="images/ruang-hero.jpeg" alt="Ruang kuliah Fakultas Vokasi UNESA">
+    </section>
+
+    <section class="info">
+      <h2>Aturan Singkat Peminjaman Ruangan</h2>
+      <div class="info-kartu">
+        <article>
+          <h3>Hari Kerja: Gratis</h3>
+          <p>Peminjaman Senin sampai Jumat tidak dikenai biaya.</p>
+        </article>
+        <article>
+          <h3>Akhir Pekan: Berbayar</h3>
+          <p>Peminjaman Sabtu dan Minggu dikenai tarif sesuai ruangan.</p>
+        </article>
+        <article>
+          <h3>Surat Peminjaman Wajib</h3>
+          <p>Unggah surat dalam bentuk file PDF saat mengajukan.</p>
+        </article>
+        <article>
+          <h3>Fasilitas Sudah Termasuk</h3>
+          <p>Proyektor, AC, dan lainnya tidak perlu diajukan terpisah.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 SIPTA - Fakultas Vokasi UNESA | UTS Pemrograman Web</p>
+  </footer>
+
+  <!-- SCRIPT: urutan jangan dibalik -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
