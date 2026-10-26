@@ -396,3 +396,25 @@ textarea:focus {
     width: 100%;
   }
 }
+
+/* ===== 15. VALIDASI HIDUP: kolom yang sudah benar ===== */
+#form-peminjaman .input-benar {
+  border-color: #146c3a;
+}
+
+.kotak-sukses ul {
+  margin: 10px 0 10px 20px;
+}
+/* ===== 16. KARTU RUANGAN: tombol sejajar di dasar kartu ===== */
+.kartu-ruangan {
+  display: flex;
+  flex-direction: column;
+}
+
+.kartu-ruangan .btn-ajukan {
+  margin-top: auto;
+}
+
+.kartu-ruangan p:last-of-type {
+  margin-bottom: 14px;
+}
